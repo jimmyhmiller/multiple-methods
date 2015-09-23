@@ -1,4 +1,4 @@
-#Multiple-methods
+# Multiple-methods
 
 Multiple-methods is a micro library that implements multi methods in javascript. This allows you to do things like the following:
 
