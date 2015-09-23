@@ -1,0 +1,29 @@
+{
+  "name": "multiple-methods",
+  "version": "0.0.1",
+  "description": "A micro library that implements multi methods in javascript.",
+  "main": "multi.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimmyhmiller/multiple-methods.git"
+  },
+  "keywords": [
+    "multi-methods"
+  ],
+  "author": "Jimmy Miller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimmyhmiller/multiple-methods/issues"
+  },
+  "homepage": "https://github.com/jimmyhmiller/multiple-methods#readme",
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "object-hash": "^0.9.1"
+  },
+  "devDependencies": {
+    "jest-cli": "^0.5.7"
+  }
+}
