@@ -1,15 +1,15 @@
 "use strict";
 
-const hash = require("object-hash");
-const _ = require("lodash");
+var hash = require("object-hash");
+var _ = require("lodash");
 
 function multi(fn) {
-    let m = new Map();
-    let defaultMethod = _.restParam(function(args) {
+    var m = new Map();
+    var defaultMethod = _.restParam(function(args) {
         throw new Error("No match found and no default");
     });
     function dispatcher(args) {
-        let value = _.spread(fn)(args);
+        var value = _.spread(fn)(args);
         if (value != undefined && m.has(hash.sha1(value))) {
            return _.spread(m.get(hash.sha1(value)))(args); 
         } else {
