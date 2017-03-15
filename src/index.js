@@ -1,23 +1,20 @@
-"use strict";
-
-var hash = require("object-hash");
-var _ = require("lodash");
+import hash from 'object-hash';
+import _ from 'lodash';
 
 function multi(fn) {
-    var m = new Map();
-    var defaultMethod = _.restParam(function(args) {
+    const m = new Map();
+    let defaultMethod = function(...args) {
         throw new Error("No match found and no default");
-    });
-    function dispatcher(args) {
-        var value = _.spread(fn)(args);
+    };
+    function dispatcher(...args) {
+        var value = fn(...args);
         if (value != undefined && m.has(hash.sha1(value))) {
-           return _.spread(m.get(hash.sha1(value)))(args); 
+           return m.get(hash.sha1(value))(...args); 
         } else {
-            return _.spread(defaultMethod)(args);
+            return defaultMethod(...args);
         }
         
     }
-    dispatcher = _.restParam(dispatcher);
     dispatcher.method = (value, f) => {
         m.set(hash.sha1(value), f);
         return dispatcher;
@@ -28,4 +25,5 @@ function multi(fn) {
     } 
     return dispatcher;
 }
-module.exports = multi
+
+export default multi;

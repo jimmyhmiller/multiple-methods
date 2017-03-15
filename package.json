@@ -1,29 +1,37 @@
 {
   "name": "multiple-methods",
-  "version": "0.0.3",
-  "description": "A micro library that implements multi methods in javascript.",
-  "main": "multi.js",
-  "scripts": {
-    "test": "jest"
-  },
+  "version": "0.0.4",
+  "description": "A micro library that implements multi methods in javascript.",  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jimmyhmiller/multiple-methods.git"
   },
-  "keywords": [
-    "multi-methods"
-  ],
+  "scripts": {
+    "build": "nwb build-react-component",
+    "clean": "nwb clean-module && npm clean-demo",
+    "start": "nwb serve-react-demo",
+    "test": "nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "object-hash": "^1.1.7"
+  },
+  "devDependencies": {
+    "nwb": "0.15.x"
+  },
   "author": "Jimmy Miller",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jimmyhmiller/multiple-methods/issues"
   },
-  "homepage": "https://github.com/jimmyhmiller/multiple-methods#readme",
-  "dependencies": {
-    "lodash": "^3.10.1",
-    "object-hash": "^0.9.1"
-  },
-  "devDependencies": {
-    "jest-cli": "^0.5.7"
-  }
+  "homepage": "https://github.com/jimmyhmiller/multiple-methods#readme"
 }
