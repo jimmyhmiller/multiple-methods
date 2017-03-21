@@ -3749,9 +3749,9 @@ object-component@0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/object-component/-/object-component-0.0.3.tgz#f0c69aa50efc95b866c186f400a33769cb2f1291"
 
-object-hash@^1.1.7:
+"object-hash@git://github.com/jimmyhmiller/object-hash.git#1857679571d93b5a865e8a32715286d0e8c3468d":
   version "1.1.7"
-  resolved "https://registry.yarnpkg.com/object-hash/-/object-hash-1.1.7.tgz#a8d83fdf5d4583a4e2e7ffc18e8915e08482ef52"
+  resolved "git://github.com/jimmyhmiller/object-hash.git#1857679571d93b5a865e8a32715286d0e8c3468d"
 
 object-inspect@^1.1.0:
   version "1.2.1"
