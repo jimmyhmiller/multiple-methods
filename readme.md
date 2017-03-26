@@ -19,7 +19,7 @@ area({shape:'nothing'});
 
 This library is incredibly small, so you should feel free to read the source. In fact you have seen everything that the library can do above. It only has one entry point "multi". Which has two properties, method and defaultMethod. It doesn't implement clojure style instance checking, although it would be easy to do yourself with it.
 
-##Install
+## Install
     npm install --save multiple-methods
 
 If you find any bugs feel free to file and issue or put in a PR.
