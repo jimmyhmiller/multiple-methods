@@ -1,6 +1,6 @@
 {
   "name": "multiple-methods",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A micro library that implements multi methods in javascript.",  "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -22,7 +22,6 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
-    "lodash": "^4.17.4",
     "object-hash": "git://github.com/jimmyhmiller/object-hash.git#1857679571d93b5a865e8a32715286d0e8c3468d"
   },
   "devDependencies": {

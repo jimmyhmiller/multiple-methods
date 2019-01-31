@@ -1,5 +1,4 @@
 import hash from 'object-hash';
-import _ from 'lodash';
 
 function multi(fn) {
     const m = new Map();
